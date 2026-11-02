@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap SMK - Barter Keahlian Antar Siswa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <h1 class="logo">SkillSwap<span>SMK</span></h1>
+            <nav>
+                <a href="index.html" class="active">Beranda</a>
+                <a href="add-skill.html">Tambah Skill</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>Tukar Keahlianmu, Kembangkan Potensimu!</h2>
+            <p>Platform barter skill antar siswa SMK. Kuasai keahlian baru dari jurusan lain dengan membagikan ilmu yang kamu miliki.</p>
+            
+            <!-- Search & Filter Bar -->
+            <div class="search-filter-box">
+                <input type="text" id="searchInput" placeholder="Cari skill (cth: Desain, Koding, Mesin)...">
+                <select id="categoryFilter">
+                    <option value="">Semua Jurusan</option>
+                    <option value="RPL">RPL (Rekayasa Perangkat Lunak)</option>
+                    <option value="DKV">DKV (Desain Komunikasi Visual)</option>
+                    <option value="TKR">TKR (Teknik Kendaraan Ringan)</option>
+                    <option value="AKL">AKL (Akuntansi)</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content: Skill Market -->
+    <main class="container">
+        <h3 class="section-title">Daftar Keahlian Tersedia</h3>
+        <div id="skillContainer" class="skill-grid">
+            <!-- Data Card akan dirender secara dinamis lewat JavaScript -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 SkillSwap SMK. Dibuat dengan HTML, CSS, & JavaScript untuk Siswa SMK.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
